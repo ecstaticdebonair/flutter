@@ -1,0 +1,70 @@
+flutter create myapp
+cd myapp
+flutter run -d chrome
+flutter run -d chrome -v
+flutter run --verbose
+flutter run -v
+flutter build web
+
+https://github.com/flutter/flutter/issues/41013
+
+flutter config --enable-web
+
+///////flutter run --verbose -d chrome
+
+
+webdev serve
+ flutter packages pub global run webdev serve
+
+
+flutter channel beta
+flutter configure --enable-web
+flutter upgrade --force
+flutter run -d chrome
+
+https://flutter.dev/docs/get-started/web
+////////////////////////////////////////////////////////////
+-->solution for blank screen
+
+flutter pub cache repair
+
+flutter run -d chrome --release
+Run flutter create bug
+flutter run -v -d Chrome
+
+Add dwds 6.0.0 to pubspec.yaml
+Execute flutter pub get & flutter update-packages
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+If you want to create a test web app run this
+$ flutter create myapp(your app name)
+
+If you have already a project and want to add web support to that package then run
+$ flutter create .
+
+open your pubspec.yaml file
+under the dev_dependencies add the below buiild_runner and other three values
+
+then run the packages get command on the top.
+
+dev_dependencies:
+build_runner: ^1.7.2
+build_test: ^0.10.12
+build_web_compilers: ^2.7.1
+
+restart the IDE and check whether the web configuration is true using
+
+$flutter config
+
+Settings:
+android-sdk: e:\android\sdk
+enable-web: true
+
+Analytics reporting is currently enabled.
+
+Once it is true and If you want to debug using chrome run the following command
+
+$flutter run -d chrome
+
+Now my running sample screenshot is here,
+
